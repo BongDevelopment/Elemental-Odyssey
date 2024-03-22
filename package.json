@@ -1,0 +1,24 @@
+{
+	"name": "Elemental-Odyssey",
+	"version": "1.0",
+	"description": "",
+	"private": true,
+	"main": "src/index.js",
+    "type": "module",
+	"scripts": {
+		"test": "node ./src/index.js"
+	},
+	"keywords": [
+		"javacsript",
+		"sern",
+		"discord.js"
+	],
+	"license": "UNLICENSED",
+	"dependencies": {
+		"@sern/handler": "^3.0.3",
+		"discord.js": "latest"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.25"
+	}
+}
