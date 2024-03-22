@@ -1,0 +1,17 @@
+{
+    "userid": {
+      "statistics": {
+        "spins": 10
+      },
+      "items": [
+        "idk how you wanna do this"
+      ],
+      "equipped": {
+        "itemName": "Water Cannon",
+        "element": "water",
+        "exp": "1/2",
+        "level": "1"
+      }
+    }
+  }
+  
