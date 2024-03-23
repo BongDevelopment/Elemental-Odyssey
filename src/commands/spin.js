@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
+const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder } = require("discord.js");
 const fs = require("fs");
 
 module.exports = {
@@ -39,12 +39,29 @@ module.exports = {
         const randomElementIndex = Math.floor(Math.random() * elements.length);
         const elementName = elements[randomElementIndex];
 
+
+        // Create embed with spin result
         const spinEmbed = new EmbedBuilder()
           .setColor("#808080")
           .setTitle("Element Roller")
-          .setDescription(`You rolled:\nRarity: **${selectedRarity.name}**\nElement: **${elementName}**`);
+          .setDescription(`You rolled:\nRarity: **${selectedRarity.name}**\nElement: **${elementName}**\nseed: ${randomNumber}`);
 
-        interaction.reply({ embeds: [spinEmbed] });
+        // Create action row with buttons
+        const actionRow = new ActionRowBuilder()
+          .addComponents(
+            new ButtonBuilder()
+              .setLabel("Skip")
+              .setStyle(2)
+              .setCustomId("skip")
+          )
+          .addComponents(
+            new ButtonBuilder()
+              .setLabel("Equip")
+              .setStyle(1)
+              .setCustomId("equip")
+          );
+
+        interaction.reply({ embeds: [spinEmbed], components: [actionRow] });
       } catch (error) {
         console.error("Error parsing rarities JSON:", error);
       }
