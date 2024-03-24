@@ -1,6 +1,6 @@
 const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder } = require("discord.js");
 const fs = require("fs").promises; 
-
+ // Note to anyone seeing this, we'll be changing this to a daily shop.
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("shop")
