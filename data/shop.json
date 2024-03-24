@@ -1,15 +1,15 @@
 {
     "shop": [
       {
-        "item": "item 1",
+        "item": "Sword",
         "price": 10
       },
       {
-        "item": "item 2",
+        "item": "Knife",
         "price": 20
       },
       {
-        "item": "item 3",
+        "item": "Bottle",
         "price": 30
       }
       
