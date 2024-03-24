@@ -40,13 +40,11 @@ module.exports = {
         const elementName = elements[randomElementIndex];
 
 
-        // Create embed with spin result
         const spinEmbed = new EmbedBuilder()
           .setColor("#808080")
           .setTitle("Element Roller")
           .setDescription(`You rolled:\nRarity: **${selectedRarity.name}**\nElement: **${elementName}**\nseed: ${randomNumber}`);
 
-        // Create action row with buttons
         const actionRow = new ActionRowBuilder()
           .addComponents(
             new ButtonBuilder()
