@@ -1,5 +1,5 @@
-const BoilerplateClient = require('./src/util/client')
-const ChalkAdvanced = require('chalk-advanced')
+import BoilerplateClient from './src/util/client.js'
+import ChalkAdvanced from 'chalk-advanced'
 
 const client = new BoilerplateClient()
 

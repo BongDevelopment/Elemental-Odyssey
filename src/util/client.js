@@ -1,12 +1,11 @@
 // Main Bot Library's
-const { Client, GatewayIntentBits, Options, Collection } = require('discord.js')
+import { Client, GatewayIntentBits, Options, Collection } from 'discord.js'
+;(await import('dotenv')).config()
 
-require('dotenv').config()
+import EventHandler from './eventLoader.js'
+import ButtonHandler from './buttonHandler.js'
 
-const EventHandler = require('./eventLoader')
-const ButtonHandler = require('./buttonHandler')
-
-module.exports = class BoilerplateClient extends Client {
+export default class BoilerplateClient extends Client {
 	constructor(customCacheOptions = {}) {
 		super({
 			intents: [

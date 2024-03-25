@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	data: {
 		name: 'equip',
 		description: 'equips element',

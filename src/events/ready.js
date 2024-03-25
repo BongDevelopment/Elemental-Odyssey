@@ -1,10 +1,10 @@
-const { REST } = require('@discordjs/rest')
-const { Routes } = require('discord-api-types/v9')
-const { readdirSync } = require('fs')
-require('dotenv').config()
-const { ChalkAdvanced } = require('chalk-advanced')
+import { REST } from '@discordjs/rest'
+import { Routes } from 'discord-api-types/v9'
+import { readdirSync } from 'fs'
+;(await import('dotenv')).config()
+import { ChalkAdvanced } from 'chalk-advanced'
 
-module.exports = async (client) => {
+export default async function (client) {
 	const commandFiles = readdirSync('./src/commands/').filter((file) =>
 		file.endsWith('.js')
 	)
@@ -12,7 +12,7 @@ module.exports = async (client) => {
 	const commands = []
 
 	for (const file of commandFiles) {
-		const command = require(`../commands/${file}`)
+		const command = (await import(`../commands/${file}`)).default
 		commands.push(command.data.toJSON())
 		client.commands.set(command.data.name, command)
 	}

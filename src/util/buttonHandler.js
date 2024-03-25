@@ -1,9 +1,9 @@
-const { readdirSync } = require('fs')
-const path = require('path')
-const { Collection } = require('discord.js')
-const { ChalkAdvanced } = require('chalk-advanced')
+import { readdirSync } from 'fs'
+import path from 'path'
+import { Collection } from 'discord.js'
+import { ChalkAdvanced } from 'chalk-advanced'
 
-module.exports = class ButtonHandler {
+export default class ButtonHandler {
 	constructor(client) {
 		this.client = client
 		this.client.buttons = new Collection()
@@ -11,11 +11,11 @@ module.exports = class ButtonHandler {
 
 	//  Load the buttons
 
-	load() {
+	async load() {
 		for (const file of readdirSync(
-			path.join(__dirname, '..', 'buttons')
+			path.join(import.meta.dirname, '..', 'buttons')
 		).filter((file) => file.endsWith('.js'))) {
-			const button = require(`../buttons/${file}`)
+			const button = (await import(`../buttons/${file}`)).default
 			this.client.buttons.set(button.data.name, button)
 		}
 		console.log(

@@ -1,19 +1,19 @@
-const {
+import {
 	SlashCommandBuilder,
 	EmbedBuilder,
 	ActionRowBuilder,
 	ButtonBuilder,
-} = require('discord.js')
-const fs = require('fs').promises
+} from 'discord.js'
+import fs from 'node:fs'
 // Note to anyone seeing this, we'll be changing this to a daily shop.
-module.exports = {
+export default {
 	data: new SlashCommandBuilder()
 		.setName('shop')
 		.setDescription('View items available for purchase'),
 
 	async execute(interaction, client) {
 		try {
-			const data = await fs.readFile('./data/shop.json', 'utf8')
+			const data = await fs.readFileSync('./data/shop.json', 'utf8')
 			const shopData = JSON.parse(data)
 
 			const shopItems = shopData.shop

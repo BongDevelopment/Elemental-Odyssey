@@ -1,12 +1,12 @@
-const {
+import {
 	SlashCommandBuilder,
 	EmbedBuilder,
 	ActionRowBuilder,
 	ButtonBuilder,
-} = require('discord.js')
-const fs = require('fs')
+} from 'discord.js'
+import fs from 'node:fs'
 
-module.exports = {
+export default {
 	data: new SlashCommandBuilder()
 		.setName('spin')
 		.setDescription('Spin to get a random rarity and element'),

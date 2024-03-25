@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	data: {
 		name: 'skip',
 		description: 'skips element',

@@ -1,13 +1,13 @@
-const { readdir } = require('fs')
-const { ChalkAdvanced } = require('chalk-advanced')
+import { readdir } from 'fs'
+import { ChalkAdvanced } from 'chalk-advanced'
 
-module.exports = class EventHandler {
+export default class EventHandler {
 	constructor(client) {
 		this.client = client
 	}
 
 	load() {
-		readdir('./src/events/', (err, files) => {
+		readdir('./src/events/', async (err, files) => {
 			if (err) return console.error(err)
 
 			for (let file of files) {
@@ -18,7 +18,7 @@ module.exports = class EventHandler {
 						`Loaded event: ${ChalkAdvanced.white(file)}`
 					)}`
 				)
-				const event = require('../events/' + file)
+				const event = (await import('../events/' + file)).default
 				let eventName = file.split('.')[0]
 
 				this.client.on(eventName, event.bind(null, this.client))
