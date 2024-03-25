@@ -1,28 +1,22 @@
 {
-	"name": "Elemental-Odyssey",
+	"name": "elemental-odyssey",
 	"version": "1.1.1",
 	"description": "Elemental game",
 	"main": "index.js",
 	"scripts": {
-	  "start": "node index.js",
-	  "dev": "nodemon index.js",
-	  "format": "prettier --write  \"src/**/*.js\""
+		"start": "node index.js",
+		"dev": "nodemon index.js",
+		"format": "prettier . --write"
 	},
 	"dependencies": {
-	  "@discordjs/rest": "^1.7.0",
-	  "chalk-advanced": "^1.0.6",
-	  "discord-api-types": "^0.37.38",
-	  "discord.js": "^14.9.0",
-	  "dotenv": "^16.0.3",
-	  "prettier": "^3.0.2"
+		"@discordjs/rest": "^1.7.0",
+		"chalk-advanced": "^1.0.6",
+		"discord-api-types": "^0.37.38",
+		"discord.js": "^14.9.0",
+		"dotenv": "^16.0.3",
+		"prettier": "^3.0.2"
 	},
 	"devDependencies": {
-	  "nodemon": "2.0.20"
+		"nodemon": "2.0.20"
 	}
 }
-
-
-
-
-
-

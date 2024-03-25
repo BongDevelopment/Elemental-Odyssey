@@ -1,93 +1,86 @@
 {
-    "rarities": [
-      {
-        "name": "common",
-        "percentage": 89,
-        "elements": [
-          "Water",
-          "Fire",
-          "Earth",
-          "Wind",
-          "Electricity"
-        ]
-      },
-      {
-        "name": "uncommon",
-        "percentage": 74,
-        "elements": [
-          "Uncommon Element 1",
-          "Uncommon Element 2",
-          "Uncommon Element 3",
-          "Uncommon Element 4",
-          "Uncommon Element 5"
-        ]
-      },
-      {
-        "name": "rare",
-        "percentage": 61,
-        "elements": [
-          "Rare Element 1",
-          "Rare Element 2",
-          "Rare Element 3",
-          "Rare Element 4",
-          "Rare Element 5"
-        ]
-      },
-      {
-        "name": "epic",
-        "percentage": 25,
-        "elements": [
-          "Epic Element 1",
-          "Epic Element 2",
-          "Epic Element 3",
-          "Epic Element 4",
-          "Epic Element 5"
-        ]
-      },
-      {
-        "name": "unique",
-        "percentage": 5,
-        "elements": [
-          "Unique Element 1",
-          "Unique Element 2",
-          "Unique Element 3",
-          "Unique Element 4",
-          "Unique Element 5"
-        ]
-      },
-      {
-        "name": "legendary",
-        "percentage": 0.5,
-        "elements": [
-          "Legendary Element 1",
-          "Legendary Element 2",
-          "Legendary Element 3",
-          "Legendary Element 4",
-          "Legendary Element 5"
-        ]
-      },
-      {
-        "name": "exotic",
-        "percentage": 0.15,
-        "elements": [
-          "Exotic Element 1",
-          "Exotic Element 2",
-          "Exotic Element 3",
-          "Exotic Element 4",
-          "Exotic Element 5"
-        ]
-      },
-      {
-        "name": "divine",
-        "percentage": 0.1,
-        "elements": [
-          "Divine Element 1",
-          "Divine Element 2",
-          "Divine Element 3",
-          "Divine Element 4",
-          "Divine Element 5"
-        ]
-      }
-    ]
-  }
-  
+	"rarities": [
+		{
+			"name": "common",
+			"percentage": 89,
+			"elements": ["Water", "Fire", "Earth", "Wind", "Electricity"]
+		},
+		{
+			"name": "uncommon",
+			"percentage": 74,
+			"elements": [
+				"Uncommon Element 1",
+				"Uncommon Element 2",
+				"Uncommon Element 3",
+				"Uncommon Element 4",
+				"Uncommon Element 5"
+			]
+		},
+		{
+			"name": "rare",
+			"percentage": 61,
+			"elements": [
+				"Rare Element 1",
+				"Rare Element 2",
+				"Rare Element 3",
+				"Rare Element 4",
+				"Rare Element 5"
+			]
+		},
+		{
+			"name": "epic",
+			"percentage": 25,
+			"elements": [
+				"Epic Element 1",
+				"Epic Element 2",
+				"Epic Element 3",
+				"Epic Element 4",
+				"Epic Element 5"
+			]
+		},
+		{
+			"name": "unique",
+			"percentage": 5,
+			"elements": [
+				"Unique Element 1",
+				"Unique Element 2",
+				"Unique Element 3",
+				"Unique Element 4",
+				"Unique Element 5"
+			]
+		},
+		{
+			"name": "legendary",
+			"percentage": 0.5,
+			"elements": [
+				"Legendary Element 1",
+				"Legendary Element 2",
+				"Legendary Element 3",
+				"Legendary Element 4",
+				"Legendary Element 5"
+			]
+		},
+		{
+			"name": "exotic",
+			"percentage": 0.15,
+			"elements": [
+				"Exotic Element 1",
+				"Exotic Element 2",
+				"Exotic Element 3",
+				"Exotic Element 4",
+				"Exotic Element 5"
+			]
+		},
+		{
+			"name": "divine",
+			"percentage": 0.1,
+			"elements": [
+				"Divine Element 1",
+				"Divine Element 2",
+				"Divine Element 3",
+				"Divine Element 4",
+				"Divine Element 5"
+			]
+		}
+	]
+}

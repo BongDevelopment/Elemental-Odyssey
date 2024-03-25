@@ -1,18 +1,16 @@
 {
-    "shop": [
-      {
-        "item": "Sword",
-        "price": 10
-      },
-      {
-        "item": "Knife",
-        "price": 20
-      },
-      {
-        "item": "Bottle",
-        "price": 30
-      }
-      
-    ]
-  }
-  
+	"shop": [
+		{
+			"item": "Sword",
+			"price": 10
+		},
+		{
+			"item": "Knife",
+			"price": 20
+		},
+		{
+			"item": "Bottle",
+			"price": 30
+		}
+	]
+}
